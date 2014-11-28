@@ -13,8 +13,29 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        tetris.cpp
+        tetris.cpp \
+    bin.cpp \
+    brick.cpp
 
-HEADERS  += tetris.h
+HEADERS  += tetris.h \
+    bin.h \
+    brick.h
 
 FORMS    += tetris.ui
+
+OTHER_FILES += \
+    images/background.png \
+    images/green.bmp \
+    images/purple.bmp \
+    images/red.bmp \
+    images/ya.bmp \
+    images/yello.bmp \
+    images/blue.png \
+    images/green.png \
+    images/purple.png \
+    images/red.png \
+    images/ya.png \
+    images/yello.png
+
+RESOURCES += \
+    Resource.qrc
